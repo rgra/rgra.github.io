@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  
+  
+  <title>Talks</title>
+  <meta name="description" content="">
+  
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://rgra.github.io/talks/">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Rabea&#39;s Blog" href="http://rgra.github.io/feed.xml">
+
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="rgransberger">
+  <meta name="twitter:title" content="Talks">
+  <meta name="twitter:description" content="">
+  
+    <meta name="twitter:creator" content="rgransberger">
+  
+  
+
+  <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Bitter:400,700,400italic:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+
+  
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Rabea&#39;s Blog</a>
+
+    <nav class="site-nav">
+      
+        
+        <a class="page-link" href="/blog/">Blog</a>
+      
+        
+        <a class="page-link" href="/about/">About</a>
+      
+        
+        <a class="page-link" href="/talks/">Talks</a>
+      
+        
+        <a class="page-link" href="/twitter/">Twitter</a>
+      
+        
+        <a class="page-link" href="https://github.com/rgra">GitHub</a>
+      
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Talks</h1>
+  </header>
+
+  <div class="post-content">
+    <div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#upcoming-conferences">Upcoming Conferences</a></li>
+<li><a href="#talks">Talks</a>
+<ul class="sectlevel2">
+<li><a href="#refactoring-your-code-to-java-9-modules">Refactoring your code to Java 9 modules</a></li>
+<li><a href="#automating-our-software-development-process-pipeline">Automating our software development process pipeline</a></li>
+<li><a href="#functional-libraries-for-java-8">Functional Libraries for Java 8</a></li>
+<li><a href="#code-reviews">Code Reviews</a></li>
+<li><a href="#effective-ide-usage">Effective IDE Usage</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="upcoming-conferences">Upcoming Conferences</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.codetalks.de/en">code.talks</a>, September, Hamburg</p>
+</li>
+<li>
+<p><a href="https://jdd.org.pl/">JDD</a>, October, Krakow</p>
+</li>
+<li>
+<p><a href="http://baselone.ch/">BaselOne</a>, October, Basel</p>
+</li>
+<li>
+<p><a href="http://www.oredev.org/">&Oslash;redev</a>, November, Malmö</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="talks">Talks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>(incomplete list)</p>
+</div>
+<div class="sect2">
+<h3 id="refactoring-your-code-to-java-9-modules">Refactoring your code to Java 9 modules</h3>
+<div class="paragraph">
+<p>Java 9 allows you to split your code into modules and grant access only to certain packages and thus hide even public classes from external use.</p>
+</div>
+<div class="paragraph">
+<p>Splitting up your code into modules directly communicates the architectural design, simplifies maintenance &amp; reuse and can slow down the increase of technical debt.</p>
+</div>
+<div class="paragraph">
+<p>In this talk we will have a look at some strategies which help you to split up your existing monolithic code base into several smaller modules. First we need tools to easily identify which parts can be split out. Then we apply some refactoring tricks to make this as easy as possible. Last we look at some more difficult examples and use design patterns to disentangle them.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Code: <a href="https://github.com/rgra/java9-module-refactoring">GitHub</a></p>
+</li>
+<li>
+<p>Slides:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>DE <a href="https://speakerdeck.com/rgra/restrukturierung-der-code-basis-mit-java-9">JavaLand, 2017</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Presented:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>JavaLand, 2017</p>
+</li>
+<li>
+<p>GeekOut, 2017 (<a href="https://2017.geekout.ee/videos/#day2-05">Recording</a>)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Scheduled for:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>BaselOne, JDD, code.talks</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="automating-our-software-development-process-pipeline">Automating our software development process pipeline</h3>
+<div class="paragraph">
+<p>Talks at a conferences often assume that you have test cases/coverage, automated deployment and no technical debt.
+But the reality is that most teams just have their code and manual/deployment.
+Books and articles tell you the theory. But how, where and when to start? Will it really pay out?</p>
+</div>
+<div class="paragraph">
+<p>In the company I work for we have had problems in getting releases out fast and accurate.
+I began by implementing automated deployment last year.
+It payed out so many times until now to have invested just this one day.</p>
+</div>
+<div class="paragraph">
+<p>At the end of the year we sat down with the whole team and, in the spirit of Christmas, we created a wish list of improvements for our development process:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Improved automatic deployment</p>
+</li>
+<li>
+<p>Release Note management/Invoicing</p>
+</li>
+<li>
+<p>Continuous Integration</p>
+</li>
+<li>
+<p>Setup new machines</p>
+</li>
+<li>
+<p>Better documentation &amp; Improved communication</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In this talk we will go through the points in this list and check what we achieved in half a year by working part time on it.
+I will present some of the solutions in a practical demo and tell you how much time we spent for each point.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Slides:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>DE <a href="https://speakerdeck.com/rgra/automatisierung-des-softwareentwicklungsprozesses">Java Forum Nord, 2016</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Presented:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Java Forum Nord, 2016</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="functional-libraries-for-java-8">Functional Libraries for Java 8</h3>
+<div class="paragraph">
+<p>Java 8 provides us with new APIs to support a functional programming style.
+While the standard provides us with a good basis, we sometimes wish for even shorter or powerful ways to write clean code for complex tasks.
+In this talk I will show you some additional libraries for Java 8 (and beyond) which give you this little extras here and there.
+I will cover a wide variety of use cases like filter/map/reduce, stream API add-ons, lambdas with unit testing, SQL query support.</p>
+</div>
+<div class="paragraph">
+<p>This will cover among others: Javaslang, JUnit 5, jOOL and other nice libraries I will dig out during my search.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Code: <a href="https://github.com/rgra/talk_functional-java-8">GitHub</a></p>
+</li>
+<li>
+<p>Slides: <a href="https://speakerdeck.com/rgra/functional-libraries-for-java-8-jfokus-2017">Jfokus 2017</a></p>
+</li>
+<li>
+<p>Presented:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Jfokus, Stockholm, 2017</p>
+</li>
+<li>
+<p>Devoxx Morocco 2016</p>
+</li>
+<li>
+<p>vJUG24 2016 (<a href="https://youtu.be/OQbqNb77NDU#t=3h55m45s">Recording</a>)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Scheduled for:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>&Oslash;redev</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="code-reviews">Code Reviews</h3>
+<div class="paragraph">
+<p>How can you achieve that code which was written some time ago can be understood by you and your team?
+How can you ensure that all developers write high quality code?
+How can you find bugs before the product is deployed?</p>
+</div>
+<div class="paragraph">
+<p>This talk introduces techniques for code reviews.
+Readable, high quality code is essential for the long term success of a project.
+We will further have a look at some tools which can help with and partially automate code reviews.</p>
+</div>
+<div class="paragraph">
+<p>I will also talk about my personal experiences made since starting with code reviews and how to avoid some common pitfalls.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Slides:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>EN <a href="https://speakerdeck.com/rgra/code-reviews-3">Devoxx Morocco 2016</a></p>
+</li>
+<li>
+<p>DE <a href="https://speakerdeck.com/rgra/code-reviews-techniques-and-tips-rheinjug-2016">RheinJUG 2016</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Presented:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Devoxx Morocco, 2016</p>
+</li>
+<li>
+<p>Java Forum Nord, 2016</p>
+</li>
+<li>
+<p>Java Forum Stuttgart, 2016</p>
+</li>
+<li>
+<p>JavaZone, 2015 (<a href="https://vimeo.com/138959649">Recording</a>)</p>
+</li>
+<li>
+<p>JAX, 2015 (<a href="https://jaxenter.de/codereviews-tipps-tools-und-techniken-26793">Recording</a>)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="effective-ide-usage">Effective IDE Usage</h3>
+<div class="paragraph">
+<p>You don&#8217;t want your IDE to propose java.awt.List as import when you need java.util.List?
+This talk will show you how to get rid of the proposal and how to use your IDE effectively to concentrate on your work.</p>
+</div>
+<div class="paragraph">
+<p>It will cover the most interesting features from the leading Java IDEs Eclipse, IntelliJ Idea and Netbeans.
+Their default settings give you a good start but there is a lot more to discover to make you more productive.
+This includes syntax highlighting, editor, compiler and code completion settings.
+In addition we will try-out the most useful refactoring actions and shortcuts.
+After this talk you have an overview on how to setup your IDE in a way which will support your working style and will make you complete your work much faster.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Slides:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>EN <a href="https://speakerdeck.com/rgra/vjug-effective-ide-usage">vJUG 2015</a></p>
+</li>
+<li>
+<p>DE <a href="https://speakerdeck.com/rgra/effektive-ide-nutzung">Nordic Coding 2014</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Presented:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>vJUG, 2015 (<a href="https://youtu.be/FwfHxholaEE">Recording</a>)</p>
+</li>
+<li>
+<p>Nordic Coding, 2014</p>
+</li>
+<li>
+<p>JavaLand, 2014</p>
+</li>
+<li>
+<p>JFocus, 2014</p>
+</li>
+<li>
+<p>Devoxx UK, 2013</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+  </div>
+
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <p>
+      
+
+&copy;  - Powered by <a href="https://jekyllrb.com">Jekyll</a> &amp; <a href="https://github.com/yous/whiteglass">whiteglass</a> - Subscribe via <a href="http://rgra.github.io/feed.xml">RSS</a>
+
+    </p>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
