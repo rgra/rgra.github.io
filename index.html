@@ -31,20 +31,8 @@
   
   
 
-  <script type="text/javascript">
-  WebFontConfig = {
-    google: { families: [ 'Bitter:400,700,400italic:latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
-</script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700" rel="stylesheet">
 
   
 
@@ -76,6 +64,9 @@
         
         <a class="page-link" href="https://github.com/rgra">GitHub</a>
       
+        
+        <a class="page-link" href="/privacy/">Privacy</a>
+      
     </nav>
 
   </div>
@@ -99,18 +90,30 @@
       <li>
         <header class="post-header">
           <h1 class="post-title">
-            <a class="post-link" href="/2017/09/10/Welcome/">Welcome to my blog</a>
+            
+              <a class="post-link" href="/2017/09/10/Welcome/">Welcome to my blog</a>
+            
           </h1>
 
-          <p class="post-meta">Sep 10, 2017 • 
-  
+          <p class="post-meta">
+            Sep 10, 2017
+            
+               •
   
     
-      <a href="/categories/jekyll/">jekyll</a>
+    
+      
+        <a href="/categories/jekyll/">jekyll</a>
+      
     
   
 
-</p>
+
+
+
+            
+            
+          </p>
         </header>
 
         <div class="post-content">
@@ -331,6 +334,17 @@ sudo bundle exec jekyll serve --drafts</pre>
 sudo gem update
 sudo bundle install</pre>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="update-27-05-2018">Update 27.05.2018</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If <code>gem update</code> times out, IPv6 might be the cause.</p>
+</div>
+<div class="paragraph">
+<p>Try pinging the named host and add the IP to <code>/etc/hosts</code> or disable IPv6.</p>
 </div>
 </div>
 </div>

@@ -31,20 +31,8 @@
   
   
 
-  <script type="text/javascript">
-  WebFontConfig = {
-    google: { families: [ 'Bitter:400,700,400italic:latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
-</script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700" rel="stylesheet">
 
   
 
@@ -76,6 +64,9 @@
         
         <a class="page-link" href="https://github.com/rgra">GitHub</a>
       
+        
+        <a class="page-link" href="/privacy/">Privacy</a>
+      
     </nav>
 
   </div>
@@ -95,12 +86,13 @@
     <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#upcoming-conferences">Upcoming Conferences</a></li>
+<li><a href="#upcoming-conferences-talks">Upcoming Conferences / Talks</a></li>
 <li><a href="#talks">Talks</a>
 <ul class="sectlevel2">
+<li><a href="#smarter-debugging-in-the-ide-15min">Smarter debugging in the IDE (15min)</a></li>
 <li><a href="#refactoring-your-code-to-java-9-modules">Refactoring your code to Java 9 modules</a></li>
 <li><a href="#automating-our-software-development-process-pipeline">Automating our software development process pipeline</a></li>
-<li><a href="#functional-libraries-for-java-8">Functional Libraries for Java 8</a></li>
+<li><a href="#functional-libraries-for-java">Functional Libraries for Java</a></li>
 <li><a href="#code-reviews">Code Reviews</a></li>
 <li><a href="#effective-ide-usage">Effective IDE Usage</a></li>
 </ul>
@@ -108,12 +100,21 @@
 </ul>
 </div>
 <div class="sect1">
-<h2 id="upcoming-conferences">Upcoming Conferences</h2>
+<h2 id="upcoming-conferences-talks">Upcoming Conferences / Talks</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://jpoint.ru/en/">JPoint Moscow</a></p>
+<p><a href="http://www.euregjug.eu/">JUG Aachen</a></p>
+</li>
+<li>
+<p><a href="http://www.jcrete.org">JCrete</a></p>
+</li>
+<li>
+<p><a href="http://www.jug-ostfalen.de/">JUG Ostfalen, Braunschweig</a></p>
+</li>
+<li>
+<p><a href="https://www.jug-da.de/">JUG Darmstadt</a></p>
 </li>
 </ul>
 </div>
@@ -124,6 +125,36 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>(incomplete list)</p>
+</div>
+<div class="sect2">
+<h3 id="smarter-debugging-in-the-ide-15min">Smarter debugging in the IDE (15min)</h3>
+<div class="paragraph">
+<p>IDEs like Eclipse, IntelliJ and NetBeans have powerful tools for debugging applications.
+Besides the obvious features for setting breakpoints and stepping through the application, they contain additional tools which can make debugging much easier.</p>
+</div>
+<div class="paragraph">
+<p>I will show you how to get a more in-depth look at your application through the debugger and how to find what you are looking for faster.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Code: <a href="https://github.com/rgra/io.github.rgra.debug" class="bare">https://github.com/rgra/io.github.rgra.debug</a></p>
+</li>
+<li>
+<p>Slides: <a href="https://speakerdeck.com/rgra/smarter-debugging-in-the-ide" class="bare">https://speakerdeck.com/rgra/smarter-debugging-in-the-ide</a></p>
+</li>
+<li>
+<p>Presented:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Devoxx UK 2018 (<a href="https://speakerdeck.com/rgra/smarter-debugging-in-the-ide">Slides</a>, <a href="https://www.youtube.com/watch?v=NUStrGa0YbM">Recording</a>)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 </div>
 <div class="sect2">
 <h3 id="refactoring-your-code-to-java-9-modules">Refactoring your code to Java 9 modules</h3>
@@ -170,15 +201,8 @@
 <li>
 <p>JavaLand, 2017</p>
 </li>
-</ul>
-</div>
-</li>
 <li>
-<p>Scheduled for:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>JPoint Moscow 2018</p>
+<p>JPoint Moscow 2018 (<a href="https://speakerdeck.com/rgra/refactoring-your-code-to-java-9-modules-2">Slides</a>)</p>
 </li>
 </ul>
 </div>
@@ -250,7 +274,7 @@ I will present some of the solutions in a practical demo and tell you how much t
 </div>
 </div>
 <div class="sect2">
-<h3 id="functional-libraries-for-java-8">Functional Libraries for Java 8</h3>
+<h3 id="functional-libraries-for-java">Functional Libraries for Java</h3>
 <div class="paragraph">
 <p>Java 8 provides us with new APIs to support a functional programming style.
 While the standard provides us with a good basis, we sometimes wish for even shorter or powerful ways to write clean code for complex tasks.
@@ -266,12 +290,15 @@ I will cover a wide variety of use cases like filter/map/reduce, stream API add-
 <p>Code: <a href="https://github.com/rgra/talk_functional-java-8">GitHub</a></p>
 </li>
 <li>
-<p>Slides: <a href="https://speakerdeck.com/rgra/functional-libraries-for-java-8-plus-oredev">&Oslash;redev 2017</a></p>
+<p>Slides: <a href="https://speakerdeck.com/rgra/functional-libraries-for-java-3">Devoxx UK 2018</a></p>
 </li>
 <li>
 <p>Presented:</p>
 <div class="ulist">
 <ul>
+<li>
+<p>Devoxx UK 2018 (<a href="https://speakerdeck.com/rgra/functional-libraries-for-java-3">Slides</a>, <a href="https://www.youtube.com/watch?v=0fl8Bv5oWuU">Recording</a>)</p>
+</li>
 <li>
 <p>&Oslash;redev (<a href="https://speakerdeck.com/rgra/functional-libraries-for-java-8-plus-oredev">Slides</a>)</p>
 </li>
@@ -401,6 +428,8 @@ After this talk you have an overview on how to setup your IDE in a way which wil
 </div>
 </div>
   </div>
+
+  
 
 </article>
 

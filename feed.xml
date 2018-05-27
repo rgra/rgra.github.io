@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-  <generator uri="http://jekyllrb.com" version="3.6.2">Jekyll</generator>
+  <generator uri="http://jekyllrb.com" version="3.7.3">Jekyll</generator>
   
   
   <link href="http://rgra.github.io/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://rgra.github.io/" rel="alternate" type="text/html" hreflang="en" />
-  <updated>2017-11-08T14:39:25+01:00</updated>
+  <updated>2018-05-27T17:28:38+02:00</updated>
   <id>http://rgra.github.io//</id>
 
   
@@ -24,7 +24,9 @@
       
       <title type="html">Welcome to my blog</title>
       
+      
       <link href="http://rgra.github.io/2017/09/10/Welcome/" rel="alternate" type="text/html" title="Welcome to my blog" />
+      
       <published>2017-09-10T00:00:00+02:00</published>
       <updated>2017-09-10T00:00:00+02:00</updated>
       <id>http://rgra.github.io/2017/09/10/Welcome</id>
@@ -247,6 +249,17 @@ sudo bundle install&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;update-27-05-2018&quot;&gt;Update 27.05.2018&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If &lt;code&gt;gem update&lt;/code&gt; times out, IPv6 might be the cause.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Try pinging the named host and add the IP to &lt;code&gt;/etc/hosts&lt;/code&gt; or disable IPv6.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;</content>
 
       
@@ -264,7 +277,7 @@ sudo bundle install&lt;/pre&gt;
       
 
       
-        <summary type="html">I always wanted to write blog posts in an easy way. For me, this means staying in my development environment which I&amp;#8217;m already used to and writing it in AsciiDoc. Previously I did already publish the list of my talks and upcoming conferences on this page, which you can still find in the Talks section of this site. When I asked other people at conferences how they write their blogs, most of them recommended Jekyll. While it&amp;#8217;s very easy to setup Jekyll (even on Windows) it took me some time to find a theme which I actually like. I&amp;#8217;m not sure I will keep this one, but this blocked me for such a long time that I just chose one today to get started. I&amp;#8217;m mostly a Java developer, so expect a lot of Java and Java conference related blog post. Occasionally I&amp;#8217;m using other languages like Javascript, C#, VBA as well. Whenever I feel like this could be interesting for others, I will share it here. Now this distracted me for quite a while and I forgot to order my sushi for after today&amp;#8217;s Werder Bundesliga match. Install steps Here are the basic setup steps, which are very simple and are just here to make them easy to find for me in case I need them again: Install Windows Subsystem for Linux Follow https://jekyllrb.com/docs/windows/ Open command prompt and type: bash Upgrade: sudo apt-get update -y &amp;amp;&amp;amp; sudo apt-get upgrade -y Install (check versions in original install instructions) sudo apt-add-repository ppa:brightbox/ruby-ng sudo apt-get update sudo apt-get install ruby2.3 ruby2.3-dev build-essential sudo gem update sudo gem install jekyll bundler Check if its running jekyll -v Create the blog: jekyll new blog --skip-bundle` cd blog Choose a theme from http://jekyllthemes.org/ Follow install steps for the theme, in my case whiteglass Use your favourite editor to change the files. Currently I&amp;#8217;m using atom with the following additional packages: asciidoc-preview autocomplete-asciidoc language-asciidoc I like to use Asciidoc to write my blog posts, so I needed to configure jekyll-asciidoc Install LiveReload Add-On in the browser (Make sure blog is compatible with Github Pages. Not relevant right now, as I have to build site myself to be able to use Asciidoc.) Write a new blog post Create a new file in _posts folder with filename year-month-day-title.adoc (or _drafts folder without a date for future posts) Peek into AsciiDoc Syntax Quick Reference from time to time = Welcome to my blog :page-layout: post :page-liquid: true :page-category: jekyll Activate Atom Editor Preview (Ctrl+Shift+A) Build Preview. This will also do incremental builds when saving files. sudo bundle install sudo bundle exec jekyll serve OR sudo bundle exec jekyll serve --drafts View preview at: http://localhost:4000/ Use Grammarly or others for spell and grammar checking sudo bundle exec jekyll build Push _site folder to git repo rgra.github.io to be automagically served on https://rgra.github.io Coming back after some time: Open command prompt and type: bash Upgrade: sudo apt-get update -y &amp;amp;&amp;amp; sudo apt-get upgrade -y sudo gem update sudo bundle install</summary>
+        <summary type="html">I always wanted to write blog posts in an easy way. For me, this means staying in my development environment which I&amp;#8217;m already used to and writing it in AsciiDoc. Previously I did already publish the list of my talks and upcoming conferences on this page, which you can still find in the Talks section of this site. When I asked other people at conferences how they write their blogs, most of them recommended Jekyll. While it&amp;#8217;s very easy to setup Jekyll (even on Windows) it took me some time to find a theme which I actually like. I&amp;#8217;m not sure I will keep this one, but this blocked me for such a long time that I just chose one today to get started. I&amp;#8217;m mostly a Java developer, so expect a lot of Java and Java conference related blog post. Occasionally I&amp;#8217;m using other languages like Javascript, C#, VBA as well. Whenever I feel like this could be interesting for others, I will share it here. Now this distracted me for quite a while and I forgot to order my sushi for after today&amp;#8217;s Werder Bundesliga match. Install steps Here are the basic setup steps, which are very simple and are just here to make them easy to find for me in case I need them again: Install Windows Subsystem for Linux Follow https://jekyllrb.com/docs/windows/ Open command prompt and type: bash Upgrade: sudo apt-get update -y &amp;amp;&amp;amp; sudo apt-get upgrade -y Install (check versions in original install instructions) sudo apt-add-repository ppa:brightbox/ruby-ng sudo apt-get update sudo apt-get install ruby2.3 ruby2.3-dev build-essential sudo gem update sudo gem install jekyll bundler Check if its running jekyll -v Create the blog: jekyll new blog --skip-bundle` cd blog Choose a theme from http://jekyllthemes.org/ Follow install steps for the theme, in my case whiteglass Use your favourite editor to change the files. Currently I&amp;#8217;m using atom with the following additional packages: asciidoc-preview autocomplete-asciidoc language-asciidoc I like to use Asciidoc to write my blog posts, so I needed to configure jekyll-asciidoc Install LiveReload Add-On in the browser (Make sure blog is compatible with Github Pages. Not relevant right now, as I have to build site myself to be able to use Asciidoc.) Write a new blog post Create a new file in _posts folder with filename year-month-day-title.adoc (or _drafts folder without a date for future posts) Peek into AsciiDoc Syntax Quick Reference from time to time = Welcome to my blog :page-layout: post :page-liquid: true :page-category: jekyll Activate Atom Editor Preview (Ctrl+Shift+A) Build Preview. This will also do incremental builds when saving files. sudo bundle install sudo bundle exec jekyll serve OR sudo bundle exec jekyll serve --drafts View preview at: http://localhost:4000/ Use Grammarly or others for spell and grammar checking sudo bundle exec jekyll build Push _site folder to git repo rgra.github.io to be automagically served on https://rgra.github.io Coming back after some time: Open command prompt and type: bash Upgrade: sudo apt-get update -y &amp;amp;&amp;amp; sudo apt-get upgrade -y sudo gem update sudo bundle install Update 27.05.2018 If gem update times out, IPv6 might be the cause. Try pinging the named host and add the IP to /etc/hosts or disable IPv6.</summary>
       
 
       
